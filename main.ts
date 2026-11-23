@@ -1,11 +1,13 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
-// 🫶 (heart hands, U+1FAF6) — two hands forming a heart. It is warm,
-// human, and instantly readable across cultures: not just a face
-// claiming to be happy, but a gesture offering love to the stranger
-// seeing it. Hard not to smile back at.
-const emoji = "🫶";
+// 🥰 (smiling face with hearts, U+1F970) — second-pass pick. The
+// first draft used 🫶 (heart hands): a warm gesture, but it has no
+// face. A stranger smiles back at a smile, so a face wins the
+// pairwise bet: 🥰 pairs smiling eyes and a gentle smile — the
+// contagious part — with floating hearts, the warmth part. It beat
+// both 🫶 and the runner-up 🤗 (hugging face) on that test.
+const emoji = "🥰";
 
 // The gate requires entry.txt to be 1 to 8 characters. Assert this
 // emoji is exactly one code point (a single grapheme, no ZWJ
